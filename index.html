@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapHours">
+            <h2>суммируйте <em>ЧАСЫ</em> из календаря</h1>
+            <input type="text" id="hours" placeholder="Например: 5+26+15+23+14+5..." onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 43'/>
+            <div class="hoursDisplay">0 Часов</div>
+        </div>
+        <div class="wrapMinutes">
+            <h2>суммируйте <em>МИНУТЫ</em> из календаря</h1>
+            <input type="text" id="minutes" placeholder="Например: 56+24+42+11+3+59..." onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.charCode == 43' />
+            <div class="minutesDisplay">0 Минут</div>
+        </div>
+    </div>
+    <div class="wrapResult">
+        <button class="btn"><p>Посчитать часы и минуты</p></button>
+        <div class="resultDisplay">Результат:</div>
+    </div>
+</body>
+</html>
